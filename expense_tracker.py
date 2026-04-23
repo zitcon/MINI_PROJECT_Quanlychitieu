@@ -1,5 +1,6 @@
 import os
 import json
+from datetime import datetime
 
 DATA_FILE = "expenses.txt"
 JSON_FILE = "expenses.json"
@@ -68,6 +69,24 @@ def input_non_empty(prompt):
         print("Input cannot be empty. Please try again.")
 
 
+def input_valid_date(prompt):
+    while True:
+        value = input(prompt).strip()
+
+        try:
+            input_date = datetime.strptime(value, "%Y-%m-%d")
+            today = datetime.today()
+
+            if input_date > today:
+                print("Date cannot be in the future.")
+                continue
+
+            return value
+
+        except ValueError:
+            print("Invalid date. Please enter date in YYYY-MM-DD format.")
+
+
 def input_positive_float(prompt):
     while True:
         value = input(prompt).strip()
@@ -99,15 +118,34 @@ def add_expense(expenses):
     print("\n=== ADD NEW EXPENSE ===")
 
     while True:
-        expense_id = input_non_empty("Enter expense ID: ")
+        expense_id = input_non_empty("Enter expense ID (E01, E02...): ")
+
+        if not expense_id.startswith("E"):
+            print("ID must start with 'E' (e.g., E01).")
+            continue
+
         if is_duplicate_id(expenses, expense_id):
             print("This ID already exists. Please enter another ID.")
+            continue
+
+        break
+
+    date = input_valid_date("Enter date (YYYY-MM-DD): ")
+
+    while True:
+        category = input_non_empty("Enter category: ")
+        if category.isdigit():
+            print("Category must contain text, not just numbers.")
         else:
             break
 
-    date = input_non_empty("Enter date (YYYY-MM-DD): ")
-    category = input_non_empty("Enter category: ")
-    description = input_non_empty("Enter description: ")
+    while True:
+        description = input_non_empty("Enter description: ")
+        if description.isdigit():
+            print("Description must contain text, not just numbers.")
+        else:
+            break
+
     amount = input_positive_float("Enter amount: ")
 
     new_expense = {

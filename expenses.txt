@@ -1,4 +1,5 @@
-123456|2006-04-22|abc|aaaaaaa|23.0
-23456|2027-04-22|23|23|23.0
-E01|2027-04-22|ưer|ưer|2.0
-E99|2026-04-22|rt|re|2.0
+E01|2026-04-20|Food|Breakfast bánh mì|15000.0
+E02|2026-04-20|Transport|Grab đi học|25000.0
+E03|2026-04-21|Study|Mua sách Python|120000.0
+E04|2026-04-21|Entertainment|Xem phim CGV|90000.0
+E05|2026-04-22|Food|Trà sữa|45000.0

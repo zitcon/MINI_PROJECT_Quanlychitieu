@@ -107,5 +107,5 @@ python3 expense_tracker.py
 ---
 
 ## 👤 Author
-- Student: **(Your Name)**
+- Student: **(Nguyễn Võ Yên Khanh)**
 - Course: Programming Methods

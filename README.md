@@ -1,111 +1,112 @@
-# Personal Finance / Expense Tracker
+# 💰 Personal Finance / Expense Tracker
 
 ## 📌 Overview
-This project is a Command Line Interface (CLI) application written in Python.  
-It is designed to help users manage personal expenses, including adding, searching, sorting, and analyzing expense data.
+This is a **Command Line Interface (CLI)** application written in Python.
 
-The project follows **procedural programming principles** and meets all requirements of the Mini Project.
+It helps users:
+- Manage personal expenses
+- Add, edit, delete records
+- Search, sort, and analyze data
+- Export data to JSON
 
 ---
 
-## ⚙️ Features
+## 🚀 Features
 
 ### 🔹 Basic Features
-- Add new expense records
-- Display all expenses in a formatted table
-- Search expense by exact ID
-- Sort expenses by amount
-- Calculate basic statistics:
+- ➕ Add new expense
+- 📋 Display all expenses
+- 🔍 Search by ID
+- 🔃 Sort by amount
+- 📊 Basic statistics:
   - Total expenses
   - Average expense
-- Save and load data from `.txt` file
+- 💾 Save & load data from `.txt`
 
 ---
 
 ### 🔹 Advanced Features
-- Search by keyword (category, description, date)
-- Sort by multiple options:
-  - Ascending / Descending
-  - Category (A → Z)
-- Statistics by category (grouping data)
-- Export data to `.json` file
+- 🔎 Advanced search (category, description, date)
+- 🔀 Multiple sorting options
+- 📈 Statistics by category
+- 🗂 Export to `.json`
+- ✏️ Update expense
+- ❌ Delete expense
 
 ---
 
 ## 📂 Project Structure
-```text
-expense_tracker.py   # Main program
-expenses.txt         # Data storage (text file)
-expenses.json        # Exported JSON file
-README.md            # Project documentation
-```
 
----
+- `expense_tracker.py`: Main program
+- `expenses.txt`: Data storage
+- `expenses.json`: Exported file
+- `README.md`: Documentation
 
 ## 📄 Data Format
 
-Data is stored in `expenses.txt` with the format:
+Stored in `expenses.txt`:
 
-```text
-id|date|category|description|amount
-```
+- Format: `id|date|category|description|amount`
 
 ### Example:
 
-```text
-E01|2026-04-21|Food|Lunch|35000
-E02|2026-04-21|Transport|Bus ticket|10000
-```
+- `E01|2026-04-21|Food|Lunch|35000`
+- `E02|2026-04-21|Transport|Bus ticket|10000`
 
 ---
 
 ## ▶️ How to Run
 
-Open terminal in project folder and run:
-
 ```bash
 python expense_tracker.py
 ```
 
-If it doesn't work:
+If not working:
 
 ```bash
 python3 expense_tracker.py
 ```
+## 🧠 Program Menu
 
----
-
-## 📋 Menu
-
-```text
-1. Add new expense
-2. Display all expenses
-3. Search
-4. Sort
-5. Statistics
-6. Export to JSON
-0. Exit
 ```
+💰 PERSONAL FINANCE / EXPENSE TRACKER
 
----
+1. ➕ Add new expense
+2. 📋 Display all expenses
+3. 🔍 Search
+4. 🔃 Sort
+5. 📊 Statistics
+6. ✏️ Update expense
+7. ❌ Delete expense
+8. 🗂 Export to JSON
+0. ❌ Exit
+```
+## 🖥 Demo (Example Run)
 
-## 🧠 Programming Concepts Used
-- Functions (modular design)
-- Loops (`while True`)
-- Conditional statements (`if-elif`)
-- File handling (`.txt`)
-- JSON handling
-- Data structures (list, dictionary)
+Enter your choice: 1
 
----
+=== ADD NEW EXPENSE ===  
+Enter expense ID: E01  
+Enter date: 2026-04-21  
+Enter category: Food  
+Enter description: Lunch  
+Enter amount: 30000  
 
-## 📊 Git Workflow
-- Create branch: `topic4-expense-tracker`
-- Multiple commits (logical steps)
-- Pull request & merge to `main`
+Expense added successfully!
 
----
-
-## 👤 Author
-- Student: **(Nguyễn Võ Yên Khanh)**
-- Course: Programming Methods
+🧩 Programming Concepts Used
+Functions (modular design)
+Loops (while True)
+Conditional statements (if-elif)
+File handling (.txt)
+JSON handling
+Data structures (list, dictionary)
+🔄 Git Workflow
+Create branch: topic4-expense-tracker
+Make multiple commits
+Push to GitHub
+Create Pull Request
+Merge into main
+👨‍🎓 Author
+Student: Nguyễn Võ Yên Khanh
+Course: Programming Methods

@@ -38,10 +38,15 @@ Each expense is stored as a **dictionary**:
     "amount": 30000
 }
 ```
-The data is stored in a list:
+
+The data is stored in a **list**:
+
 ```python
 expenses = [{...}, {...}]
+```
+
 ---
+
 ## ⚙️ **4. Technologies Used**
 
 | **Component** | **Role** |
@@ -68,54 +73,43 @@ expenses = [{...}, {...}]
 ## 🚀 **6. Main Features**
 
 ### 🔹 **6.1 Add New Expense**
-- **ID** must start with `E`  
-- **Date** must be valid (*not in the future*)  
-- **Category** must be text  
-- **Amount** must be a number  
-
----
+- **ID** must start with `E`
+- **Date** must be valid (*not in the future*)
+- **Category** must be text
+- **Amount** must be a number
 
 ### 🔹 **6.2 Display Expenses**
-- Show all data in **formatted table**
-
----
+- Show all data in a **formatted table**
 
 ### 🔹 **6.3 Search**
-- 🔍 Search by **ID**  
-- 🔎 Search by *keyword*  
-- 💰 Search by *amount range*  
-
----
+- Search by **ID**
+- Search by *keyword*
+- Search by *amount range*
+- Search by *date range*
 
 ### 🔹 **6.4 Sort**
-- 🔃 Sort ascending  
-- 🔃 Sort descending  
-- 🔤 Sort by category  
-
----
+- Sort ascending
+- Sort descending
+- Sort by category
 
 ### 🔹 **6.5 Statistics**
-- 📊 Total expenses  
-- 📈 Average expense  
-- 🔺 Highest expense  
-- 🔻 Lowest expense  
-
----
+- Total expenses
+- Average expense
+- Highest expense
+- Lowest expense
 
 ### 🔹 **6.6 Update & Delete**
-- ✏️ Update existing expense  
-- ❌ Delete expense by ID  
-
----
+- Update existing expense
+- Delete expense by **ID**
 
 ### 🔹 **6.7 Export JSON**
-- 🗂 Export data to `expenses.json`  
+- Export data to `expenses.json`
 
 ---
 
 ## 🧠 **7. Menu**
 
-```
+```text
 PERSONAL FINANCE / EXPENSE TRACKER
 
 1. Add new expense
@@ -128,6 +122,8 @@ PERSONAL FINANCE / EXPENSE TRACKER
 8. Export to JSON
 0. Exit
 ```
+
+---
 
 ## ▶️ **8. How to Run**
 

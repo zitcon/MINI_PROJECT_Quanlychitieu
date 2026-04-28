@@ -37,8 +37,11 @@ Each expense is stored as a **dictionary**:
     "description": "Lunch",
     "amount": 30000
 }
+```
 The data is stored in a list:
+```python
 expenses = [{...}, {...}]
+---
 ## ⚙️ **4. Technologies Used**
 
 | **Component** | **Role** |
@@ -52,10 +55,13 @@ expenses = [{...}, {...}]
 ---
 
 ## 📂 **5. Project Structure**
-expense_tracker.py # Main program
-expenses.txt # Data storage
-expenses.json # Exported file
-README.md # Documentation
+
+| **File** | **Description** |
+|----------|----------------|
+| `expense_tracker.py` | Main program |
+| `expenses.txt` | Data storage |
+| `expenses.json` | Exported file |
+| `README.md` | Documentation |
 
 ---
 
@@ -108,24 +114,26 @@ README.md # Documentation
 ---
 
 ## 🧠 **7. Menu**
+
+```
 PERSONAL FINANCE / EXPENSE TRACKER
 
-1.Add new expense
-2.Display all expenses
-3.Search
-4.Sort
-5.Statistics
-6.Update expense
-7.Delete expense
-8.Export to JSON
-9.Exit
-
----
+1. Add new expense
+2. Display all expenses
+3. Search
+4. Sort
+5. Statistics
+6. Update expense
+7. Delete expense
+8. Export to JSON
+0. Exit
+```
 
 ## ▶️ **8. How to Run**
 
 ```bash
 python expense_tracker.py
+```
 ## 🔄 **9. Git Workflow**
 
 The project follows a structured **Git workflow**:
